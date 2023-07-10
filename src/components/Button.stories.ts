@@ -12,7 +12,5 @@ export default meta;
 type Story = StoryObj<typeof Button>;
 
 export const HelloButton: Story = {
-  args: {
-    children: 'Hello World',
-  },
+  render: () => <Button>Hello World</Button>,
 };

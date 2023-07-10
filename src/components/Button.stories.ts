@@ -14,3 +14,9 @@ type Story = StoryObj<typeof Button>;
 export const HelloButton: Story = {
   render: () => <Button>Hello World</Button>,
 };
+
+export const ClickButton: Story = {
+  args: {
+    children: 'click',
+  },
+};

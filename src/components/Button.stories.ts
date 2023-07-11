@@ -12,15 +12,18 @@ export default meta;
 
 type Story = StoryObj<typeof Button>;
 
-export const Default: Story = {
-  args: {
-    children: 'Default',
-  },
-};
-
-export const Primay: Story = {
+export const PrimarySmall: Story = {
   args: {
     children: 'Primary',
     color: 'primary',
+    size: 'sm',
+  },
+};
+
+export const PrimaryLarge: Story = {
+  args: {
+    children: 'Primary',
+    color: 'primary',
+    size: 'lg',
   },
 };
